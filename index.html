@@ -9,17 +9,13 @@
 <body>
 
   <div class="container mt-4">
-    <h3>Вход на сайт</h3>
+    <h3>Вход</h3>
 
     <form onsubmit="enterSite(event)">
-      <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Пароль</label>
-        <input type="password" class="form-control" required>
-      </div>
+      <label>Email</label>
+      <input type="email" class="form-control mb-2" required>
+      <label>Пароль</label>
+      <input type="password" class="form-control mb-2" required>
       <button type="submit" class="btn btn-primary">Войти</button>
     </form>
 
@@ -28,19 +24,13 @@
     <h3>Регистрация</h3>
 
     <form onsubmit="enterSite(event)">
-      <div class="mb-3">
-        <label class="form-label">Никнейм</label>
-        <input type="text" class="form-control" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" class="form-control" required>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Пароль</label>
-        <input type="password" class="form-control" required>
-      </div>
-      <button type="submit" class="btn btn-success">Зарегистрироваться</button>
+      <label>Никнейм</label>
+      <input type="text" class="form-control mb-2" required>
+      <label>Email</label>
+      <input type="email" class="form-control mb-2" required>
+      <label>Пароль</label>
+      <input type="password" class="form-control mb-2" required>
+      <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
     </form>
   </div>
 
