@@ -3,390 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dota 2 — НАЗВАНИЕ СТРАНИЦЫ</title>
+  <title>Dota 2 — Герои</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body { background: #0f141a; color: #dfe6ee; }
-    .navbar { background: #151d26 !important; border-bottom: 1px solid #263241; }
-    .card { background: #151d26; border: 1px solid #263241; color: #dfe6ee; }
-    .hero-card { cursor: pointer; }
-    .hero-icon { font-size: 2.4rem; }
-    .section-title { color: #4dd0e1; border-left: 4px solid #ff5f5f; padding-left: .6rem; }
-    .modal-content { background: #151d26; color: #dfe6ee; border: 1px solid #263241; }
-    .modal-header { border-bottom: 1px solid #263241; }
-    .list-group-item { background: #151d26; color: #dfe6ee; border-color: #263241; }
-    .accordion-item { background: #151d26; border-color: #263241; }
-    .accordion-button { background: #1b2531; color: #dfe6ee; }
-    .accordion-button:not(.collapsed) { background: #22303f; color: #4dd0e1; }
-    .accordion-body { background: #151d26; color: #cfd8e3; }
-    footer { color: #5c7080; border-top: 1px solid #263241; }
-    .badge-role-1 { background: #2e7d32; }
-    .badge-role-2 { background: #6a1b9a; }
-    .badge-role-3 { background: #ef6c00; }
-    .badge-role-4 { background: #0277bd; }
-    .badge-role-5 { background: #00838f; }
-  </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="heroes.html">DOTA 2 GUIDE</a>
+      <a class="navbar-brand" href="heroes.html">Dota 2 Guide</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link" href="heroes.html">Герои</a></li>
+          <li class="nav-item"><a class="nav-link active" href="heroes.html">Герои</a></li>
           <li class="nav-item"><a class="nav-link" href="roles.html">Роли</a></li>
-          <li class="nav-item"><a class="nav-link" href="map.html">Карта и варды</a></li>
+          <li class="nav-item"><a class="nav-link" href="map.html">Карта</a></li>
           <li class="nav-item"><a class="nav-link" href="items.html">Предметы</a></li>
           <li class="nav-item"><a class="nav-link" href="terms.html">Термины</a></li>
           <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
         </ul>
-        <a href="index.html" class="btn btn-outline-info btn-sm">Выйти</a>
+        <a href="index.html" class="btn btn-outline-light btn-sm">Выйти</a>
       </div>
     </div>
   </nav>
-<div class="container my-5">
-  <h2 class="section-title mb-4">Топ-10 героев</h2>
-  <div class="row g-4">
 
-    <div class="col-md-4">
-      <div class="card h-100 hero-card" data-bs-toggle="modal" data-bs-target="#heroWraith">
-        <div class="card-body text-center">
-          <div class="hero-icon">💀</div>
-          <h5 class="card-title">Wraith King</h5>
-          <p class="card-text small">Простой керри. Вторая жизнь, один активный скилл.</p>
-          <span class="badge badge-role-1">Керри</span>
+  <div class="container my-4">
+    <h2>Герои для новичков</h2>
+    <div class="row">
+
+      <div class="col-md-4 mb-3">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#heroWraith">
+          <div class="card-body">
+            <h5 class="card-title">Wraith King</h5>
+            <p class="card-text">Простой керри. Вторая жизнь, один активный скилл.</p>
+            <span class="badge bg-success">Керри</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#heroAxe">
+          <div class="card-body">
+            <h5 class="card-title">Axe</h5>
+            <p class="card-text">Танк-инициатор. Убивает, когда его бьют.</p>
+            <span class="badge bg-warning text-dark">Оффлейн</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#heroCm">
+          <div class="card-body">
+            <h5 class="card-title">Crystal Maiden</h5>
+            <p class="card-text">Саппорт. Дает ману и контролит врагов.</p>
+            <span class="badge bg-info text-dark">Саппорт</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal" id="heroWraith" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Wraith King</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Роль:</strong> Керри · <strong>Линия:</strong> Лёгкая</p>
+          <h6>Скиллы</h6>
+          <ul>
+            <li>Wraithfire Blast — стан и урон.</li>
+            <li>Vampiric Spirit — вампиризм.</li>
+            <li>Mortal Strike — криты.</li>
+            <li>Reincarnation — возрождение после смерти.</li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="col-md-4">
-      <div class="card h-100 hero-card" data-bs-toggle="modal" data-bs-target="#heroAxe">
-        <div class="card-body text-center">
-          <div class="hero-icon">🪓</div>
-          <h5 class="card-title">Axe</h5>
-          <p class="card-text small">Танк-инициатор. Убивает, когда его бьют.</p>
-          <span class="badge badge-role-3">Оффлейн</span>
+  <div class="modal" id="heroAxe" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Axe</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Роль:</strong> Оффлейн · <strong>Линия:</strong> Сложная</p>
+          <h6>Скиллы</h6>
+          <ul>
+            <li>Berserker's Call — враги бьют только тебя.</li>
+            <li>Battle Hunger — замедление и урон.</li>
+            <li>Counter Helix — крутится при ударах.</li>
+            <li>Culling Blade — добивает с низким HP.</li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="col-md-4">
-      <div class="card h-100 hero-card" data-bs-toggle="modal" data-bs-target="#heroCm">
-        <div class="card-body text-center">
-          <div class="hero-icon">❄️</div>
-          <h5 class="card-title">Crystal Maiden</h5>
-          <p class="card-text small">Саппорт. Дает ману и контролит врагов.</p>
-          <span class="badge badge-role-5">Саппорт</span>
+  <div class="modal" id="heroCm" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Crystal Maiden</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Роль:</strong> Саппорт · <strong>Линия:</strong> Лёгкая</p>
+          <h6>Скиллы</h6>
+          <ul>
+            <li>Crystal Nova — урон и замедление.</li>
+            <li>Frostbite — обездвиживает.</li>
+            <li>Arcane Aura — даёт ману команде.</li>
+            <li>Freezing Field — урон вокруг.</li>
+          </ul>
         </div>
       </div>
     </div>
-
-    <div class="col-md-4">
-      <div class="card h-100 hero-card" data-bs-toggle="modal" data-bs-target="#heroLion">
-        <div class="card-body text-center">
-          <div class="hero-icon">🦁</div>
-          <h5 class="card-title">Lion</h5>
-          <p class="card-text small">Много контроля. Лягушка, мана, стан.</p>
-          <span class="badge badge-role-5">Саппорт</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card h-100 hero-card" data-bs-toggle="modal" data-bs-target="#heroDk">
-        <div class="card-body text-center">
-          <div class="hero-icon">🐉</div>
-          <h5 class="card-title">Dragon Knight</h5>
-          <p class="card-text small">Живучий. В ульте — дракон, ломает башни.</p>
-          <span class="badge badge-role-3">Оффлейн</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card h-100 hero-card" data-bs-toggle="modal" data-bs-target="#heroSniper">
-        <div class="card-body text-center">
-          <div class="hero-icon">🎯</div>
-          <h5 class="card-title">Sniper</h5>
-          <p class="card-text small">Стреляет издалека. Держи дистанцию.</p>
-          <span class="badge badge-role-1">Керри</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card h-100 hero-card" data-bs-toggle="modal" data-bs-target="#heroJug">
-        <div class="card-body text-center">
-          <div class="hero-icon">⚔️</div>
-          <h5 class="card-title">Juggernaut</h5>
-          <p class="card-text small">Неуязвимость, мощный ульт, самохил.</p>
-          <span class="badge badge-role-1">Керри</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card h-100 hero-card" data-bs-toggle="modal" data-bs-target="#heroTide">
-        <div class="card-body text-center">
-          <div class="hero-icon">🌊</div>
-          <h5 class="card-title">Tidehunter</h5>
-          <p class="card-text small">Толстый. Ульта — стан по площади.</p>
-          <span class="badge badge-role-3">Оффлейн</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card h-100 hero-card" data-bs-toggle="modal" data-bs-target="#heroLich">
-        <div class="card-body text-center">
-          <div class="hero-icon">🧊</div>
-          <h5 class="card-title">Lich</h5>
-          <p class="card-text small">Щит, стрела, прыгающий ульт.</p>
-          <span class="badge badge-role-5">Саппорт</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card h-100 hero-card" data-bs-toggle="modal" data-bs-target="#heroVenge">
-        <div class="card-body text-center">
-          <div class="hero-icon">🦅</div>
-          <h5 class="card-title">Vengeful Spirit</h5>
-          <p class="card-text small">Свап, стан, аура на урон.</p>
-          <span class="badge badge-role-4">Саппорт</span>
-        </div>
-      </div>
-    </div>
-
   </div>
-</div>
-
-<div class="modal fade" id="heroWraith" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">💀 Wraith King</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Роль:</strong> Керри (Pos 1) · <strong>Линия:</strong> Лёгкая · <strong>Сложность:</strong> Лёгкая</p>
-        <h6>Скиллы</h6>
-        <ul>
-          <li><strong>Wraithfire Blast</strong> — стан + урон по одной цели.</li>
-          <li><strong>Vampiric Spirit</strong> — пассивный вампиризм, скелеты на ульте.</li>
-          <li><strong>Mortal Strike</strong> — криты с шансом.</li>
-          <li><strong>Reincarnation</strong> — после смерти возрождается на месте.</li>
-        </ul>
-        <p class="mb-0"><strong>Совет:</strong> не бойся умирать — ульта вернёт тебя в бой.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="heroAxe" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">🪓 Axe</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Роль:</strong> Оффлейн (Pos 3) · <strong>Линия:</strong> Сложная · <strong>Сложность:</strong> Лёгкая</p>
-        <h6>Скиллы</h6>
-        <ul>
-          <li><strong>Berserker's Call</strong> — заставляет врагов бить только тебя.</li>
-          <li><strong>Battle Hunger</strong> — замедляет и наносит урон.</li>
-          <li><strong>Counter Helix</strong> — крутится и бьёт при получении удара.</li>
-          <li><strong>Culling Blade</strong> — добивает врага с низким HP.</li>
-        </ul>
-        <p class="mb-0"><strong>Совет:</strong> купи Blink Dagger — прыгай в толпу и жми Call.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="heroCm" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">❄️ Crystal Maiden</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Роль:</strong> Саппорт (Pos 5) · <strong>Линия:</strong> Лёгкая · <strong>Сложность:</strong> Лёгкая</p>
-        <h6>Скиллы</h6>
-        <ul>
-          <li><strong>Crystal Nova</strong> — урон и замедление по площади.</li>
-          <li><strong>Frostbite</strong> — обездвиживает цель.</li>
-          <li><strong>Arcane Aura</strong> — пассивно даёт ману всей команде.</li>
-          <li><strong>Freezing Field</strong> — большой урон вокруг, но надо стоять.</li>
-        </ul>
-        <p class="mb-0"><strong>Совет:</strong> стой позади, кидай стан и не лезь первым.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="heroLion" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">🦁 Lion</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Роль:</strong> Саппорт (Pos 5) · <strong>Линия:</strong> Лёгкая · <strong>Сложность:</strong> Лёгкая</p>
-        <h6>Скиллы</h6>
-        <ul>
-          <li><strong>Earth Spike</strong> — стан по линии.</li>
-          <li><strong>Hex</strong> — превращает врага в лягушку.</li>
-          <li><strong>Mana Drain</strong> — высасывает ману.</li>
-          <li><strong>Finger of Death</strong> — огромный урон одной цели.</li>
-        </ul>
-        <p class="mb-0"><strong>Совет:</strong> Hex + Spike = враг стоит на месте, пока его бьют.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="heroDk" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">🐉 Dragon Knight</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Роль:</strong> Оффлейн (Pos 3) · <strong>Линия:</strong> Сложная · <strong>Сложность:</strong> Лёгкая</p>
-        <h6>Скиллы</h6>
-        <ul>
-          <li><strong>Breathe Fire</strong> — урон по площади, снижает урон врагов.</li>
-          <li><strong>Dragon Tail</strong> — стан.</li>
-          <li><strong>Dragon Blood</strong> — пассивная броня и реген.</li>
-          <li><strong>Elder Dragon Form</strong> — становится драконом, бьёт по площади.</li>
-        </ul>
-        <p class="mb-0"><strong>Совет:</strong> в ульте смело иди ломать башни.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="heroSniper" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">🎯 Sniper</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Роль:</strong> Керри (Pos 1) · <strong>Линия:</strong> Лёгкая · <strong>Сложность:</strong> Средняя</p>
-        <h6>Скиллы</h6>
-        <ul>
-          <li><strong>Shrapnel</strong> — зона урона и замедления.</li>
-          <li><strong>Headshot</strong> — шанс на доп. урон и замедление.</li>
-          <li><strong>Take Aim</strong> — пассивно увеличивает дальность.</li>
-          <li><strong>Assassinate</strong> — дальний выстрел по одной цели.</li>
-        </ul>
-        <p class="mb-0"><strong>Совет:</strong> стой максимально далеко, не давай себя окружить.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="heroJug" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">⚔️ Juggernaut</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Роль:</strong> Керри (Pos 1) · <strong>Линия:</strong> Лёгкая · <strong>Сложность:</strong> Лёгкая</p>
-        <h6>Скиллы</h6>
-        <ul>
-          <li><strong>Blade Fury</strong> — крутится, наносит урон и неуязвим к магии.</li>
-          <li><strong>Healing Ward</strong> — вард лечит союзников.</li>
-          <li><strong>Blade Dance</strong> — пассивные криты.</li>
-          <li><strong>Omnislash</strong> — прыгает по врагам, нанося удары.</li>
-        </ul>
-        <p class="mb-0"><strong>Совет:</strong> Blade Fury спасает от магии, Omnislash — убивает одиночную цель.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="heroTide" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">🌊 Tidehunter</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Роль:</strong> Оффлейн (Pos 3) · <strong>Линия:</strong> Сложная · <strong>Сложность:</strong> Лёгкая</p>
-        <h6>Скиллы</h6>
-        <ul>
-          <li><strong>Gush</strong> — урон и снижение брони.</li>
-          <li><strong>Kraken Shell</strong> — пассивно снижает урон.</li>
-          <li><strong>Anchor Smash</strong> — удар по площади, снижает урон врагов.</li>
-          <li><strong>Ravage</strong> — огромный стан по площади.</li>
-        </ul>
-        <p class="mb-0"><strong>Совет:</strong> Ravage — лучший старт драки. Прыгай с Blink и жми ульту.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="heroLich" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">🧊 Lich</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Роль:</strong> Саппорт (Pos 5) · <strong>Линия:</strong> Лёгкая · <strong>Сложность:</strong> Лёгкая</p>
-        <h6>Скиллы</h6>
-        <ul>
-          <li><strong>Frost Nova</strong> — урон и замедление.</li>
-          <li><strong>Frost Shield</strong> — щит союзнику, снижает урон.</li>
-          <li><strong>Sinister Gaze</strong> — удерживает врага на месте.</li>
-          <li><strong>Chain Frost</strong> — прыгает по врагам, нанося урон.</li>
-        </ul>
-        <p class="mb-0"><strong>Совет:</strong> кидай щит на керри и не забывай про ульт в толпе.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="heroVenge" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">🦅 Vengeful Spirit</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Роль:</strong> Саппорт (Pos 4) · <strong>Линия:</strong> Сложная · <strong>Сложность:</strong> Лёгкая</p>
-        <h6>Скиллы</h6>
-        <ul>
-          <li><strong>Magic Missile</strong> — стан по одной цели.</li>
-          <li><strong>Wave of Terror</strong> — урон и снижение брони по площади.</li>
-          <li><strong>Vengeance Aura</strong> — пассивно даёт урон союзникам.</li>
-          <li><strong>Nether Swap</strong> — меняется местами с героем.</li>
-        </ul>
-        <p class="mb-0"><strong>Совет:</strong> свапом можно спасти союзника или вытащить врага под своих.</p>
-      </div>
-    </div>
-  </div>
-</div>
-  <footer class="text-center py-4 mt-5">
-    <p class="mb-0 small">Учебный проект · Bootstrap 5</p>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
